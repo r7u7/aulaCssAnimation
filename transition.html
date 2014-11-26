@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- http://www.w3schools.com/css/css3_transitions.asp  -->
+<html>
+    <head>
+        <title>transition</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+                transition: width 2s, height 2s, transform 2s;
+            }
+            div:hover {
+                width: 200px;
+                height: 200px;
+                -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+                transform: rotate(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
