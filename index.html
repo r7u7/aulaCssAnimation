@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+http://www.justinaguilar.com/animations
+-->
+<html>
+    <head>
+        <title>Biblioteca Animation.css</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <link rel="stylesheet" href="css/animations.css">
+        <style>
+            #brazuka{
+                width: 100px; height: 100px;
+                margin: 0 auto;
+                background-image: url("img/bola2.png");
+                visibility: hidden;
+                position: absolute;
+                top: 150px;
+                left:50%;
+                z-index: 1;
+            }
+            section{
+                
+                background-color:  white;
+                height:300px;
+                position: relative;
+            }
+            body{
+                background-color: chartreuse;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+        <div id="brazuka"></div>
+       </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       <script>
+	$(window).scroll(function() {
+		$('#brazuka').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+    </body>
+</html>
