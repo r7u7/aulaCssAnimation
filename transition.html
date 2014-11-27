@@ -6,22 +6,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style> 
+            
             div {
                 width: 100px;
                 height: 100px;
-                background: red;
-                -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
-                transition: width 2s, height 2s, transform 2s;
+                background: blue;
+                transition: width 2s, height 2s, transform 3s, background-color 1s;
+                position: absolute;
+                top: 50px;
+                left: 600px;
             }
             div:hover {
                 width: 200px;
                 height: 200px;
-                -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
                 transform: rotate(180deg);
+                background: greenyellow;
             }
         </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div></div>
     </body>
 </html>
